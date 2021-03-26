@@ -115,7 +115,7 @@ public class walk extends Canvas implements Runnable {
             }
 
     public void collisions(){
-        if (gubbex > pelarex) {
+        if (gubbex == pelarex) {
 
             isFinished = true;
         }
@@ -124,6 +124,7 @@ public class walk extends Canvas implements Runnable {
 
         if (isFinished){
             JOptionPane.showMessageDialog(null,"Du klarade banan");
+            isFinished = false;
         }
     }
     private void golv(Graphics g, int x, int y) {
