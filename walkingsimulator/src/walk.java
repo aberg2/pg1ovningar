@@ -109,18 +109,19 @@ public class walk extends Canvas implements Runnable {
 
 
         //
-        collisions(g);
+        collisions();
         g.dispose();
         bs.show();
             }
 
-    public void collisions(Graphics g){
-        if (gubbex == pelarex) {
+    public void collisions(){
+        if (gubbex > pelarex) {
 
             isFinished = true;
-            gubbex += gubbed;
-            gubbey += gubbew;
         }
+        gubbex += gubbed;
+        gubbey += gubbew;
+
         if (isFinished){
             JOptionPane.showMessageDialog(null,"Du klarade banan");
         }
