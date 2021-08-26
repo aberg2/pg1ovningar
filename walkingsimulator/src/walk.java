@@ -147,6 +147,7 @@ public class walk extends Canvas implements Runnable {
 
     }
 
+
     private class KL implements KeyListener {
         @Override
         public void keyPressed(KeyEvent keyEvent) {
